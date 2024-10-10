@@ -1,14 +1,56 @@
 <html>
   <head>
-    <link rel="stylesheet" href="style.css" />
-    <title>Introduction</title>
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <title>Introduction Page</title>
+    <style>
+      body {
+        background-color: lightblue;
+      }
+      
+      ul#navbar {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+      }
+      
+      #navbar li {
+        float: left;
+        border-right: 1px solid #bbb;
+      }
+      
+      #navbar li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      
+      #navbar li a:hover {
+        background-color: #111;
+      }
+    </style>
   </head>
+
   <body>
     <header>
       <ul id="navbar">
-        <li><a href="#home">Home</a></li>
-        <li><a href=""></a></li>
+        <li><a href="#" style="background-color: green;">Home</a></li>
+        <li><a href="#second">Second</a></li>
       </ul>
     </header>
+
+    <div id="home">
+      <h1>Heading</h1>
+    </div>
+
+    <div id="second">
+      <h1 id="second">Second</h1>
+    </div>
+
   </body>
+
+<!-- title, name (nickname), pictures, introduction, headlines, paragraphs, table, images, two additional-->
 </html>
