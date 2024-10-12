@@ -1,6 +1,7 @@
 <html>
   <head>
     <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <title>Introduction Page</title>
     <style>
       body {
@@ -32,10 +33,6 @@
         background-color: #111;
       }
 
-      div {
-        padding: 10px;
-      }
-
       #home * {
         padding: 0;
         margin: 0;
@@ -44,14 +41,37 @@
       #home>img {
         height: 150px;
         display: block;
-        margin-left: auto;
-        margin-right: auto;
+        margin: 10px auto;
         border: 3px solid #333;
         border-radius: 50%;
       }
 
       .subheading {
         text-align: center;
+      }
+      #contact {
+        margin: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      div#contact>* {
+        border: 2px solid #0000ff;
+        background-color: rgba(0,0,255,0.1);
+        border-radius: 15px;
+        padding: 5px 10px;
+        margin: 0px 5px;
+      }
+
+      div#contact div {
+        display: flex;
+        align-items: center;
+      }
+
+      #contact a {
+        text-decoration: none;
+        color: black;
       }
     </style>
   </head>
@@ -69,6 +89,18 @@
       <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgduaBPioYl5FAK8et3OQBB4peMLxbLfE82PM8N0_TQ9uZ1Lxs4C0T_2iCazgLGMrGhJoaujlJSGw4iC98MRW_gJOhD_bM2bSQ23aAOrckVQjl-pCg0DEfhzbrWci5cGrsrWhosChYvHf0/s800/boy_11.png" alt="Face Img">
       <h1 style="text-align: center; font-style: italic;">Lau Hong Chit (Jeff)</h1>
       <h3 style="text-align: center;">22013214G</h3>
+      <div id="contact">
+        <a href="mailto:22013214g@connect.polyu.hk">
+          <div id="mail">
+            <i class="material-icons">mail_outline</i>
+            22013214g@connect.polyu.hk
+          </div>
+        </a>
+        <div id="phone">
+          <i class="material-icons">phone</i>
+          (852) 2333 0600
+        </div>
+      </div>
     </div>
 
     <div id="second">
