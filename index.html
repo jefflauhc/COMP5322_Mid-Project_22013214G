@@ -1,92 +1,102 @@
 <html>
-  <head>
-    <!-- <link rel="stylesheet" href="style.css" /> -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <title>Introduction Page</title>
-    <style>
-      body {
-        background-color: lightblue;
-      }
-      
-      ul#navbar {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        background-color: #333;
-      }
-      
-      #navbar li {
-        float: left;
-        border-right: 1px solid #bbb;
-      }
-      
-      #navbar li a {
-        display: block;
-        color: white;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-      }
-      
-      #navbar li a:hover {
-        background-color: #111;
-      }
 
-      #home * {
-        padding: 0;
-        margin: 0;
-      }
+<head>
+  <!-- <link rel="stylesheet" href="style.css" /> -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <title>Introduction Page</title>
+  <style>
+    body {
+      background-color: lightblue;
+    }
 
-      #home>img {
-        height: 150px;
-        display: block;
-        margin: 10px auto;
-        border: 3px solid #333;
-        border-radius: 50%;
-      }
+    ul#navbar {
+      position: fixed;
+      display: block;
+      width: 100%;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+    }
 
-      .subheading {
-        text-align: center;
-      }
-      #contact {
-        margin: 10px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
+    #navbar li {
+      float: left;
+      border-right: 1px solid #bbb;
+    }
 
-      div#contact>* {
-        border: 2px solid #0000ff;
-        background-color: rgba(0,0,255,0.1);
-        border-radius: 15px;
-        padding: 5px 10px;
-        margin: 0px 5px;
-      }
+    #navbar li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
 
-      div#contact div {
-        display: flex;
-        align-items: center;
-      }
+    #navbar li a:hover {
+      background-color: #111;
+    }
 
-      #contact a {
-        text-decoration: none;
-        color: black;
-      }
-    </style>
-  </head>
+    #home * {
+      padding: 0;
+      margin: 0;
+    }
 
-  <body>
-    <header>
-      <ul id="navbar">
-        <li><a href="#" style="background-color: green;">Home</a></li>
-        <li><a href="#second">Second</a></li>
-        <li><a href="#third">Third</a></li>
-      </ul>
-    </header>
+    #home>img {
+      height: 150px;
+      display: block;
+      margin: 10px auto;
+      border: 3px solid #333;
+      border-radius: 50%;
+    }
 
-    <div id="home">
-      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgduaBPioYl5FAK8et3OQBB4peMLxbLfE82PM8N0_TQ9uZ1Lxs4C0T_2iCazgLGMrGhJoaujlJSGw4iC98MRW_gJOhD_bM2bSQ23aAOrckVQjl-pCg0DEfhzbrWci5cGrsrWhosChYvHf0/s800/boy_11.png" alt="Face Img">
+    .subheading {
+      text-align: center;
+    }
+
+    #contact {
+      margin: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    div#contact>* {
+      border: 2px solid #0000ff;
+      background-color: rgba(0, 0, 255, 0.1);
+      border-radius: 15px;
+      padding: 5px 10px;
+      margin: 0px 5px;
+    }
+
+    div#contact div {
+      display: flex;
+      align-items: center;
+    }
+
+    #contact a {
+      text-decoration: none;
+      color: black;
+    }
+
+    p {
+      text-align: justify;
+      font-size: medium;
+    }
+  </style>
+</head>
+
+<body>
+  <ul id="navbar">
+    <li><a href="#" style="background-color: green;">Home</a></li>
+    <li><a href="#intro">Introduction</a></li>
+    <li><a href="#imaging">Imaging</a></li>
+  </ul>
+  <div id="main" style="padding: 10px;">
+    <div id="home" style="margin-top: 50px;">
+      <img
+        src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgduaBPioYl5FAK8et3OQBB4peMLxbLfE82PM8N0_TQ9uZ1Lxs4C0T_2iCazgLGMrGhJoaujlJSGw4iC98MRW_gJOhD_bM2bSQ23aAOrckVQjl-pCg0DEfhzbrWci5cGrsrWhosChYvHf0/s800/boy_11.png"
+        alt="Face Img">
       <h1 style="text-align: center; font-style: italic;">Lau Hong Chit (Jeff)</h1>
       <h3 style="text-align: center;">22013214G</h3>
       <div id="contact">
@@ -105,18 +115,45 @@
       </div>
     </div>
 
-    <div id="second">
-      <h2 id="second" class="subheading">Self Introduction</h2>
-      <p style="padding-left: 10px; padding-right: 10px;">
-        hiiiiiiiiiiiiiiiiiiiii<br/>iiiiii
+    <div id="intro">
+      <h2 id="intro" class="subheading">Self Introduction</h2>
+      <p>
+        Since my completion of Bachleor of Science in Radiography and graduated from The Hong Kong Polytechnic
+        University in 2021, I have been working as a diagnostic radiographer in Tuen Mun Hospital, Hospital Authority.
+        My routine duties include performing diagnostic imaging examinations in general radiography, fluoroscopy in
+        Operating Theatres and Combined Endoscopic Centres, Computed Tomography (CT) and Magnetic Resonance Imaging
+        (MRI). Also, as a PACS Administrator, I provide assistance to fellow colleagues in IT-related problems and
+        ensure stable service of our PACS system for images archiving and transmission.
+      </p>
+      <p>
+        As a hobby, I have some basic knowledge in programming in Python, and web development in HTML, JavaScript and
+        ReactJS. In my leisure time, I try to develop some web applications for my personal use, such as to read my
+        weekly duty roster for work and then create events in my personal calendar to remind the scheduled duties.
+        Through this subject of COMP5322 and this Taught Master Programme of Health Informatics, I aim to gain more
+        knowledge in webpage development and other IT-related knowledge that could be applied in my job to assist the
+        workflow of the department that I am currently working in.
       </p>
     </div>
-
-    <div id="third">
-      <h2 id="third" class="subheading">Third</h2>
+    <hr />
+    <div id="imaging">
+      <h2 id="imaging" class="subheading">Imaging Modalities</h2>
+      <p>Tuen Mun Hospital provides various diagnostic imaging services and radiological interventional procedures:</p>
+      <ul>
+        <li>General Radiography (Plain X-ray)</li>
+        <li>Fluoroscopy and Contrast Studies</li>
+        <li>Angiography and Interventional Radiology</li>
+        <li>Computed Tomography (CT)</li>
+        <li>Magnetic Resonance Imaging (MRI)</li>
+        <li>Ultrasound</li>
+        <li>Mammography and Breast Imaging</li>
+        <li>Nuclear Medicine and Positron Emission Imaging</li>
+      </ul>
     </div>
+    <hr />
 
-  </body>
+  </div>
+</body>
 
 <!-- title, name (nickname), pictures, introduction, headlines, paragraphs, table, images, two additional-->
+
 </html>
