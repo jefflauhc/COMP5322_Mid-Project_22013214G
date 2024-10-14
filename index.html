@@ -1,9 +1,10 @@
+<!DOCTYPE html>
 <html>
 
 <head>
   <!-- <link rel="stylesheet" href="style.css" /> -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <title>Introduction Page</title>
+  <title>Introduction Page - Lau Hong Chit</title>
   <style>
     body {
       background-color: lightblue;
@@ -99,6 +100,15 @@
       vertical-align: top;
       width: 50%;
     }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      border: 2px solid grey;
+      padding: 5px;
+      margin: 10px;
+      border-radius: 5px;
+    }
   </style>
 </head>
 
@@ -108,9 +118,9 @@
     <li><a href="#intro">Introduction</a></li>
     <li><a href="#qualification">Qualifications</a></li>
     <li><a href="#imaging">Imaging</a></li>
-    <li><a href="#4th">fourth</a></li>
+    <li><a href="#contact_me">Contact Me</a></li>
   </ul>
-  <div id="main" style="padding: 10px;">
+  <div id="main" style="padding: 10px; padding-top: 50px;">
     <div id="home">
       <img
         src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgduaBPioYl5FAK8et3OQBB4peMLxbLfE82PM8N0_TQ9uZ1Lxs4C0T_2iCazgLGMrGhJoaujlJSGw4iC98MRW_gJOhD_bM2bSQ23aAOrckVQjl-pCg0DEfhzbrWci5cGrsrWhosChYvHf0/s800/boy_11.png"
@@ -144,8 +154,8 @@
         ensure stable service of our PACS system for the archiving and transmission of medical images.
       </p>
       <p>
-        As a hobby, I have some basic knowledge in programming in Python, and web development in HTML, JavaScript and
-        ReactJS. In my leisure time, I try to develop some web applications for my personal use, such as to read my
+        As a hobby, I have some basic knowledge in programming in Python, and web development in PHP and HTML. In my
+        leisure time, I try to develop some web applications for my personal use, such as to read my
         weekly duty roster for work and then create events in my personal calendar to remind the scheduled duties.
         Through this subject of COMP5322 and the Taught Master Programme of Health Informatics provided by Faculty of
         Health and Social Sciences (FHSS), I aim to gain more
@@ -194,15 +204,40 @@
         </tr>
       </table>
       <div id="video" style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
-        <a href="https://www.youtube.com/watch?v=IpoVJa073SA" target="_blank" style="text-decoration: none; color: black; text-align: center;">
-          <h5><u>Video by Hospital Authority introducing the work of Diagnostic Radiographers</u><br/><i><span class="small">https://www.youtube.com/watch?v=IpoVJa073SA</span></i></h5>
+        <a href="https://www.youtube.com/watch?v=IpoVJa073SA" target="_blank"
+          style="text-decoration: none; color: black; text-align: center;">
+          <h5><u>Video by Hospital Authority introducing the work of Diagnostic Radiographers</u><br /><i><span
+                class="small">https://www.youtube.com/watch?v=IpoVJa073SA</span></i></h5>
         </a>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/IpoVJa073SA?si=mnOLoqGQmjc6KKGD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/IpoVJa073SA?si=mnOLoqGQmjc6KKGD"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </div>
     </div>
     <hr />
-    <div id="4th">
-      <h2 class="subheading">fourth</h2>
+    <div id="contact_me">
+      <h2 class="subheading">Contact Me</h2>
+      <p>Feel free to leave a message using the following form!</p>
+      <form action="" method="post" target="_top">
+        <div>
+          <label for="form_name">Name:</label>
+          <input type="text" id="form_name">
+        </div>
+        <div>
+          <label for="form_email">Email: </label>
+          <input type="email" id="form_email">
+        </div>
+        <label for="form_message">Leave a Message:</label>
+        <textarea id="form_message" rows="5" required></textarea>
+        <div>
+          <input type="checkbox" id="form_reply_checkbox"><label for="form_reply_checkbox">Please Reply</label>
+        </div>
+        <div>
+          <input type="reset">
+          <input type="submit">
+        </div>
+      </form>
     </div>
   </div>
 </body>
