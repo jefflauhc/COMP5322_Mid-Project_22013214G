@@ -83,16 +83,18 @@
 
     p {
       text-align: justify;
-      font-size: medium;
+      font-size: small;
     }
 
     table {
       width: 100%;
       padding: 0 10px;
     }
+
     table th {
-      font-size: medium
+      font-size: small
     }
+
     table td {
       vertical-align: top;
       width: 50%;
@@ -104,11 +106,12 @@
   <ul id="navbar">
     <li><a href="#" style="background-color: green;">Home</a></li>
     <li><a href="#intro">Introduction</a></li>
+    <li><a href="#qualification">Qualifications</a></li>
     <li><a href="#imaging">Imaging</a></li>
     <li><a href="#4th">fourth</a></li>
   </ul>
-  <div id="main" style="padding: 10px;">
-    <div id="home" style="margin-top: 50px;">
+  <div id="main" style="padding: 10px; margin-top: 50px;">
+    <div id="home">
       <img
         src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgduaBPioYl5FAK8et3OQBB4peMLxbLfE82PM8N0_TQ9uZ1Lxs4C0T_2iCazgLGMrGhJoaujlJSGw4iC98MRW_gJOhD_bM2bSQ23aAOrckVQjl-pCg0DEfhzbrWci5cGrsrWhosChYvHf0/s800/boy_11.png"
         alt="Face Img">
@@ -131,7 +134,7 @@
     </div>
     <hr />
     <div id="intro">
-      <h2 id="intro" class="subheading">Self Introduction</h2>
+      <h2 class="subheading">Self Introduction</h2>
       <p>
         Since my completion of Bachleor of Science in Radiography and graduated from The Hong Kong Polytechnic
         University in 2021, I have been working as a diagnostic radiographer in Tuen Mun Hospital, Hospital Authority.
@@ -151,8 +154,17 @@
       </p>
     </div>
     <hr />
+    <div id="qualification">
+      <h2 class="subheading">Qualifications</h2>
+      <ul>
+        <li>BSc (Hons) in Radiography (2021), Hong Kong Polytechnic University</li>
+        <li>MSc in Health Informatics (2025), Hong Kong Polytechnic University</li>
+        <li>Registered Radiographer (Part I) (Category: Diagnostic), Radiographers Board, Hong Kong</li>
+      </ul>
+    </div>
+    <hr />
     <div id="imaging">
-      <h2 id="imaging" class="subheading">Imaging Modalities</h2>
+      <h2 class="subheading">Imaging Modalities</h2>
       <img src="https://www3.ha.org.hk/tmh/images/services/02_01_radi_banner.jpg"
         style="margin-left: auto; margin-right: auto; display: block; height: 150px">
       <p>The Department of Radiology in Tuen Mun Hospital provides various diagnostic imaging services and radiological
@@ -181,11 +193,16 @@
           </td>
         </tr>
       </table>
-
+      <div id="video" style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+        <a href="https://www.youtube.com/watch?v=IpoVJa073SA" target="_blank" style="text-decoration: none; color: black; text-align: center;">
+          <h5><u>Video by Hospital Authority introducing the work of Diagnostic Radiographers</u><br/><i><span class="small">https://www.youtube.com/watch?v=IpoVJa073SA</span></i></h5>
+        </a>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/IpoVJa073SA?si=mnOLoqGQmjc6KKGD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
     </div>
     <hr />
     <div id="4th">
-      <h2 id="4th" class="subheading">fourth</h2>
+      <h2 class="subheading">fourth</h2>
     </div>
   </div>
 </body>
